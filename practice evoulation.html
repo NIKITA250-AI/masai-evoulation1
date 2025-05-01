@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="How the Internet Works" />
+  <title>How the Internet Works</title>
+  
+  <!-- External Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      margin: 0;
+      padding: 0;
+    }
+    header, section, article, aside, footer {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: #ffffffc7;
+    }
+    h1, h2 {
+      color: #00796b;
+    }
+    table, th, td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>How the Internet Works</h1>
+    <nav>
+      <a href="#client-server">Client & Server</a> |
+      <a href="#web-request">Web Request</a> |
+      <a href="#quiz">Quiz</a>
+    </nav>
+  </header>
+
+  <!-- Section -->
+  <section id="client-server">
+    <h2>Client & Server Communication</h2>
+    <p>The <b>client</b> requests data and the <i>server</i> responds with resources.</p>
+    <p>Example: Your browser (client) asks Google’s server for a search result.</p>
+    <hr />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Client-server-model.svg" alt="Client-Server Diagram" width="300" />
+    <p>Note: HTTP<sub>1.1</sub> is the most common protocol.</p>
+  </section>
+
+  <!-- Article -->
+  <article id="web-request">
+    <h2>The Journey of a Web Request</h2>
+    <ol>
+      <li>User enters URL</li>
+      <li>Browser looks up IP via DNS</li>
+      <li>Client sends HTTP request</li>
+      <li>Server processes request</li>
+      <li>Response is sent back and rendered</li>
+    </ol>
+
+    <ul>
+      <li>HTTP</li>
+      <li>DNS</li>
+      <li>TCP/IP</li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Aspect</th>
+        <th>Client</th>
+        <th>Server</th>
+      </tr>
+      <tr>
+        <td>Function</td>
+        <td>Requests Data</td>
+        <td>Serves Data</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Static Website</th>
+        <th>Dynamic Website</th>
+      </tr>
+      <tr>
+        <td>Content</td>
+        <td>Fixed</td>
+        <td>Changes Based on Input</td>
+      </tr>
+    </table>
+
+    <br />
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/7_LPdttKXPc" title="How the Internet Works" allowfullscreen></iframe>
+    <br />
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="300" height="200" style="border:0;" allowfullscreen></iframe>
+  </article>
+
+  <!-- Aside -->
+  <aside>
+    <h3>Quick Facts</h3>
+    <p>DNS stands for Domain Name System</p>
+    <p>IP addresses identify devices on the web</p>
+  </aside>
+
+  <!-- Form -->
+  <section id="quiz">
+    <h2>Interactive Quiz</h2>
+    <form>
+      <p><b>What is a client?</b></p>
+      <input type="radio" name="q1" value="a" /> A device that requests data <br />
+      <input type="radio" name="q1" value="b" /> A server in a data center <br />
+
+      <p>Any feedback?</p>
+      <input type="text" placeholder="Your thoughts..." /> <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><u>Created by Nikita Sidram Salunke</u></p>
+    <p>Resources: MDN, W3Schools, FreeCodeCamp</p>
+  </footer>
+
+</body>
+</html>
